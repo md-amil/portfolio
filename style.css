@@ -165,8 +165,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    /* background: url("images/amil-banner.jpg") no-repeat center; */
-    background:linear-gradient(0deg, rgba(0, 0, 0, 0.999), rgba(0, 0, 0, 0.5)), url(images/amil-banner.jpg);
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.5)), url(images/cover.jpg);
 
     height: 100vh;
     color: #fff;
@@ -362,13 +361,21 @@ section .title::after{
     background: crimson;
 }
 .skills-content .right .kotlin::before{
-    width: 80%;
+    width: 40%;
 }
-.skills-content .right .css::before{
+.skills-content .right .node::before{
     width: 50%;
 }
+
+.skills-content .right .css::before{
+    width: 30%;
+}
+.skills-content .right .native::before{
+    width: 80%;
+}
+
 .skills-content .right .js::before{
-    width: 60%;
+    width: 70%;
 }
 .skills-content .right .php::before{
     width: 70%;
@@ -450,15 +457,21 @@ section .title::after{
 .owl-dot.active,
 .owl-dot:hover{
     background: crimson!important;
+
 }
 
 /* contact section styling */
 .contact .title::after{
     content: "get in touch";
+    background-color: #222;
+
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
+    color: #fff;
+
 }
+.sub-title
 .contact .contact-content .text{
     font-size: 20px;
     font-weight: 600;

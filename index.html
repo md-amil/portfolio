@@ -12,6 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <script src="./js/nextparticle.min.js"></script>
 
 </head>
 <body>
@@ -26,7 +27,7 @@
                 <li><a href="#about" class="menu-btn">About</a></li>
                 <li><a href="#services" class="menu-btn">Services</a></li>
                 <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#teams" class="menu-btn">Teams</a></li>
+                <!-- <li><a href="#teams" class="menu-btn">Teams</a></li> -->
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
@@ -53,7 +54,12 @@
             <h2 class="title">About me</h2>
             <div class="about-content">
                 <div class="column left">
-                    <img src="images/amil-2.JPG" alt="">
+                    <div  style="background-color: rgb(37, 33, 33);width: 400px;height: 400px;">
+                        <img
+                            id="logo"
+                            src="/images/amil.JPG"
+                        >
+                    </div>
                 </div>
                 <div class="column right">
                     <div class="text">I'm Amil Ali Sahil and I'm a <span class="typing-2"></span></div>
@@ -103,25 +109,39 @@
             <div class="skills-content">
                 <div class="column left">
                     <div class="text">My creative skills & experiences.</div>
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicinget consectetur adipisicing elit. Dignissimos, ratione error est recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi. Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod. elit. Dignissimos, ratione error est recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi. Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.</p> -->
                     <p>i have learnt many technology and framwork like react-native, react, android,laravel,nodejs and firebase i have made two mazor application bigradar, munchin and legally </p>
                     <a href="#">Read more</a>
                 </div>
                 <div class="column right">
                     <div class="bars">
                         <div class="info">
-                            <span>Kotlin</span>
+                            <span>JavaScript</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>React Native</span>
                             <span>80%</span>
+                        </div>
+                        <div class="line native"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Kotlin</span>
+                            <span>40%</span>
                         </div>
                         <div class="line kotlin"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
-                            <span>JavaScript</span>
-                            <span>60%</span>
+                            <span>NodeJS, express</span>
+                            <span>50%</span>
                         </div>
-                        <div class="line js"></div>
+                        <div class="line node"></div>
                     </div>
+                    
                     <div class="bars">
                         <div class="info">
                             <span>php</span>
@@ -146,7 +166,7 @@
                     <div class="bars">
                         <div class="info">
                             <span>CSS</span>
-                            <span>50%</span>
+                            <span>30%</span>
                         </div>
                         <div class="line css"></div>
                     </div>
@@ -156,7 +176,7 @@
     </section>
 
     <!-- teams section start -->
-    <section class="teams" id="teams">
+    <!-- <section class="teams" id="teams">
         <div class="max-width">
             <h2 class="title">My Gallery</h2>
             <div class="carousel owl-carousel">
@@ -164,32 +184,24 @@
                     <div class="box">
                         <img src="images/gallery-1.jpg" alt="">
                         <a  href="https://www.instagram.com/amilalisahil/">@amilalisahil</a>
-                        <!-- <div class="text">@amilalisahil</div> -->
-                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="images/mehboob.jpg" alt="">
                         <a href="https://www.instagram.com/mr___rinkal/">@mehboob</a>
-                        <!-- <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="images/jhangir.PNG" alt="">
                         <a href="https://www.instagram.com/mr__jahangir__11/">@mr_jhangir</a>
-                        <!-- <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="images/gallery-10.jpg" alt="">
                         <a href="https://www.instagram.com/saifullah_finaz/">@saifullah_finaz</a>
-                        <!-- <div class="text">Md Saifullah</div>
-                        <p>childhood friend</p> -->
                     </div>
                 </div>
                 <div class="card">
@@ -197,16 +209,12 @@
                         <img src="images/rehan.PNG" alt="">
                         <a href="https://www.instagram.com/mr_alex_rehan/">@mr_alex_rehan</a>
 
-                        <!-- <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="images/nawaid.PNG" alt="">
                         <a href="https://www.instagram.com/official_nawaid_shaikh/">@official_nawaid_shaikh</a>
-                        <!-- <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
                     </div>
                 </div>
                 <div class="card">
@@ -214,16 +222,12 @@
                         <img src="images/adnaan.PNG" alt="">
                         <a href="https://www.instagram.com/adnan_ahmed_05/">@adnan_ahmad</a>
 
-                        <!-- <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="images/kaifi.PNG" alt="">
                         <a href="https://www.instagram.com/kaifi408/">@kaifi</a>
-                        <!-- <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
                     </div>
                 </div>
                 <div class="card">
@@ -270,29 +274,29 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- contact section start -->
-    <section class="contact" id="contact">
+    <section class="contact" style = "background-color: #222;" id="contact">
         <div class="max-width">
-            <h2 class="title">Contact me</h2>
+            <h2 class="title" style="color:white;">Contact me</h2>
             <div class="contact-content">
                 <div class="column left">
                     <!-- <div class="text">Get in Touch</div> -->
                     <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p> -->
                     <div class="icons">
                         <div class="row">
-                            <i class="fas fa-user"></i>
+                            <i class="fas fa-user" ></i>
                             <div class="info">
-                                <div class="head">Name</div>
-                                <div class="sub-title">Amil Ali Sahil</div>
+                                <div class="head" >Name</div>
+                                <div class="sub-title"style="color: white;">Amil Ali Sahil</div>
                             </div>
                         </div>
                         <div class="row">
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="info">
-                                <div class="head">Address</div>
-                                <div class="sub-title">New Delhi, India</div>
+                                <div class="head"style="color: white;">Address</div>
+                                <div class="sub-title"style="color: white;">New Delhi, India</div>
                             </div>
                         </div>
                         <div class="row">
@@ -312,8 +316,7 @@
                         <div class="row">
                             <!-- <i class="fas fa-envelope"></i> -->
                             <div class="info">
-                                <div class="head">Social</div>
-                                <!-- <div class="sub-title"><span><i class="fa fa-facebook-official" aria-hidden="true"></i></span></div> -->
+                                <!-- <div class="head">Social</div> -->
                             </div>
                         </div>
                     </div>
@@ -346,9 +349,59 @@
 
     <!-- footer section start -->
     <footer>
-        <span> <span class="far fa-copyright"></span> 2020 All rights reserved.</span>
+        <span> <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
     </footer>
 
     <script src="script.js"></script>
+    <!-- <script src="./js/dat.gui.min.js"></script> -->
+
+    <script>
+        
+// see https://nextparticle.nextco.de for more informations
+
+// var nextParticle = new NextParticle(document.all.logo);
+// nextParticle.particleGap = 0;
+// nextParticle.noise = 2;
+// nextParticle.mouseForce = 2;
+// nextParticle.size = 1000
+// nextParticle.colorize = false;
+// nextParticle.tint = '#FF00FF';
+// nextParticle.minWidth = nextParticle.size;
+// nextParticle.minHeight = nextParticle.size;
+// nextParticle.maxWidth = nextParticle.size;
+// nextParticle.maxHeight = nextParticle.size;
+
+// var redraw = function() {
+//   nextParticle.initPosition = "none";
+//   nextParticle.initDirection = "none";
+//   nextParticle.fadePostion = "none";
+//   nextParticle.fadeDirection = "none";
+//   nextParticle.minWidth = nextParticle.size;
+//   nextParticle.minHeight = nextParticle.size;
+//   nextParticle.maxWidth = nextParticle.size;
+//   nextParticle.maxHeight = nextParticle.size;
+//   nextParticle.color = nextParticle.colorize ? nextParticle.tint : '';
+//   nextParticle.start();
+// };
+
+// var gui = new dat.GUI();
+// gui.add(nextParticle, "particleGap", 1, 10, 1).onChange(redraw);
+// gui.add(nextParticle, "noise", 0, 200, 1).onChange(redraw);
+// gui.add(nextParticle, "size", 100, 800, 1).onChange(redraw);
+// gui.add(nextParticle, "colorize").onChange(redraw);
+// gui.addColor(nextParticle, "tint").onChange(redraw);
+
+// gui.add(nextParticle, "mouseForce", -200, 200, 1).onChange(redraw);
+
+// if (window.innerWidth < 1000) {
+//   gui.close();
+// }
+
+// window.onresize(function() {
+//   nextParticle.width = window.innerWidth;
+//   nextParticle.height = window.innerHeight;
+//   redraw();
+// });
+</script>
 </body>
 </html>
