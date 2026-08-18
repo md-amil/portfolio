@@ -21,7 +21,7 @@ export default function Navbar() {
     { name: 'CONTACT', href: '#contact' },
   ];
 
-  const resumeUrl = 'https://drive.google.com/file/d/1JK_p7g0N0g97NDaMqoO-_m0k-A9n6HzT/view';
+  const resumeUrl = '/resume.pdf';
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -51,6 +51,7 @@ export default function Navbar() {
             href={resumeUrl}
             target="_blank"
             rel="noopener noreferrer"
+            download="Md_Amil_Resume.pdf"
             className="flex items-center gap-1.5 pb-0.5 border-b-2 border-charcoal text-charcoal hover:text-accent hover:border-accent font-semibold transition-colors duration-200"
           >
             <span>RESUME</span>
@@ -85,6 +86,7 @@ export default function Navbar() {
             href={resumeUrl}
             target="_blank"
             rel="noopener noreferrer"
+            download="Md_Amil_Resume.pdf"
             onClick={() => setMobileMenuOpen(false)}
             className="inline-flex items-center gap-2 text-sm font-mono font-bold text-accent pt-2"
           >
