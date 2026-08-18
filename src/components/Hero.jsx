@@ -56,7 +56,7 @@ export default function Hero() {
             <div className="relative bg-white p-4 sm:p-5 shadow-xl -rotate-2 hover:rotate-0 transition-transform duration-500 ease-out border border-black/5">
               <div className="aspect-[4/5] overflow-hidden bg-neutral-900 mb-4">
                 <img
-                  src="/profile.jpg"
+                  src="/profile3.png"
                   alt="Md Amil"
                   className="w-full h-full object-cover filter grayscale contrast-110 hover:contrast-100 transition-all duration-500"
                 />
